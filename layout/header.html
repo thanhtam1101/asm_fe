@@ -1,0 +1,73 @@
+<style>
+    .navbar {
+        background-color: rgba(199, 213, 200, 0.608);
+    }
+
+    header {
+        background-color: rgba(160, 189, 162, 0.608);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+</style>
+<header>
+    <div class="row" ng-controller="gioHangCtrl">
+        <div class="d-flex justify-content-center col-12"
+            style="height: 50px; background-color: rgb(48, 68, 52); align-items: center;">
+            <div class="d-flex justify-content-center ">
+                <i class="ti-alarm-clock" style="font-size: 120%; color: aliceblue;  "> 08:30 -
+                    21:30 | </i>
+            </div>
+            <li class="nav-item dropdown d-flex justify-content-center mx-2">
+                <a class="nav-link dropdown-toggle ti-user" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: aliceblue; font-size: 110%;">
+                    Tài khoản
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#dang-nhap">Đăng nhập</a></li>
+                    <li><a class="dropdown-item" href="#dang-ky">Đăng ký</a></li>
+                </ul>
+            </li>
+            <i class="ti-shopping-cart" style="font-size: 120%; color: aliceblue; position: absolute; right:80px;">
+                <a href="#gio-hang" style="color: aliceblue; text-decoration: none;">
+                    Giỏ hàng: {{soLuongGH}}
+                </a>
+            </i>
+        </div>
+    </div>
+    <div class="row">
+        <nav class="navbar navbar-expand-md  py-2 col-12">
+            <div class="container-fluid ">
+                <img src="Img/logo (2).png" width="4%" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-flex">
+                            <a class=" nav-link active" aria-current="page" href="#trang-chu">TRANG CHỦ</a>
+                            <a class=" nav-link active" aria-current="page" href="#san-pham">SẢN PHẨM</a>
+                            <a class=" nav-link active" aria-current="page" href="#gioi-thieu">GIỚI THIỆU</a>
+                            <li class="nav-item dropdown d-flex justify-content-center mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    QUẢN LÝ
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#quan-ly-sp">Quản lý sản phẩm</a></li>
+                                    <li><a class="dropdown-item" href="#quan-ly-danh-muc">Quản lý danh mục</a></li>
+                                </ul>
+                            </li>
+
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

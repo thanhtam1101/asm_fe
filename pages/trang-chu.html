@@ -1,0 +1,146 @@
+<style>
+    .container {
+        position: relative;
+        background-color: rgb(247, 250, 253);
+        height: auto;
+        margin-top: 125px;
+    }
+
+    .text-on-image {
+        position: absolute;
+        top: 100px;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 35px;
+    }
+
+    .product-hover:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+</style>
+<section class="container" ng-controller="spTrangChuCtrl">
+    <div>
+        <img src="Img/leksykon-ro-lin.png" class="img-fluid" width="100%" alt="">
+        <div class="text-on-image">CHÀO MỪNG BẠN ĐẾN VỚI LALALEN HOUSE</div>
+    </div>
+    <p style="text-align: center; margin-top: 40px; font-size: 27px;">SẢN PHẨM MỚI NHẤT</p>
+    <hr>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 p-3 text-center" ng-repeat="sp in listSPTrangChu"  ng-if="sp.id >= 7 && sp.id <= 10">
+                    <div class="product-hover" style=" border: 1px solid rgb(183, 180, 180);" >
+                        <a href="#chi-tiet-sp/{{sp.id}}">
+                            <img ng-src={{sp.anhSP}} width="100%" alt="">
+                        </a>
+                        <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">{{sp.tenSP}} <br>{{sp.giaBan}}
+                        </p>
+                        <div class="py-4">
+                            <button class="py-2 btn " style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                    class="ti-shopping-cart"></i> Mua hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 p-3 text-center">
+                    <div class="product-hover" style="  border: 1px solid  rgb(183, 180, 180);">
+                        <img src="Img/sp2.jpg" width="100%" alt="">
+                        <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">Cây xương rồng <br>150,000
+                            đ
+                        </p>
+                        <div class="py-4 ">
+                            <button class="py-2 btn" style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                    class="ti-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-3 text-center">
+                    <div class="product-hover" style="  border: 1px solid  rgb(183, 180, 180);">
+                        <img src="Img/sp3.jpg" width="100%" alt="">
+                        <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">Cây xương rồng <br>150,000
+                            đ
+                        </p>
+                        <div class="py-4 ">
+                            <button class="py-2 btn " style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                    class="ti-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-3 text-center">
+                    <div class="product-hover" style="  border: 1px solid  rgb(183, 180, 180);">
+                        <img src="Img/NCYP handmade geometric terrarium, float frame, centerpiece urns.jpg" width="100%"
+                            alt="">
+                        <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">Cây xương rồng <br>150,000
+                            đ
+                        </p>
+                        <div class="py-4 ">
+                            <button class="py-2 btn " style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                    class="ti-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+           
+        </div>
+    </div>
+    <p style="text-align: center; margin-top: 40px; font-size: 27px;">SẢN PHẨM BÁN CHẠY</p>
+    <hr>
+    <div class="col-12">
+        <div class=" row">
+            <div class="col-lg-3 col-md-6 p-3 text-center" ng-repeat="sp in listSPTrangChu"  ng-if="sp.id >= 11 && sp.id <= 14">
+                <div class="product-hover" style=" border: 1px solid rgb(183, 180, 180);">
+                    <a href="#chi-tiet-sp/{{sp.id}}">
+                        <img ng-src={{sp.anhSP}} width="100%" alt="">
+                    </a>
+                    
+                    <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">{{sp.tenSP}} <br>{{sp.giaBan}}đ
+                    </p>
+                    <div class="py-4">
+                        <button class="py-2 btn " style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                class="ti-shopping-cart"></i> Mua hàng</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 p-3 text-center">
+                <div class="product-hover" style="  border: 1px solid  rgb(183, 180, 180);">
+                    <img src="Img/sp5.jpg" width="100%" alt="">
+                    <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">Cây xương rồng <br>150,000
+                        đ
+                    </p>
+                    <div class="py-4 ">
+                        <button class="py-2 btn " style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                class="ti-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 p-3 text-center">
+                <div class="product-hover" style="  border: 1px solid  rgb(183, 180, 180);">
+                    <img src="Img/sp6.jpg" width="100%" alt="">
+                    <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">Cây xương rồng <br>150,000
+                        đ
+                    </p>
+                    <div class="py-4 ">
+                        <button class="py-2 btn " style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                class="ti-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 p-3 text-center">
+                <div class="product-hover" style="  border: 1px solid  rgb(183, 180, 180);">
+                    <img src="Img/sp7.jpg" width="100%" alt="">
+                    <p class="py-2" style="background-color: rgba(164, 185, 169, 0.821);">Cây xương rồng <br>150,000
+                        đ
+                    </p>
+                    <div class="py-4 ">
+                        <button class="py-2 btn " style="background-color: rgba(185, 212, 197, 0.916); "><i
+                                class="ti-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+</section>

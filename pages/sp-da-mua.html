@@ -1,0 +1,78 @@
+<style>
+    .container {
+        position: relative;
+        height: auto;
+        margin-top: 135px;
+    }
+
+    .product {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .product img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .product-details {
+        flex-grow: 1;
+    }
+
+    .product h2 {
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+
+    .product p {
+        margin: 0;
+    }
+
+    .product-status {
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .product-rating {
+        margin-top: 10px;
+    }
+
+    .btn-danh-gia {
+        background-color: #27743e;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+</style>
+<section class="container">
+    <div class="row">
+        <div class="col-12 d-flex">
+            <div class="px-4 py-2 mt-4 me-1"
+                style="height: fit-content; width: fit-content; background-color:rgb(86, 124, 79);; margin-top: 30px; ">
+                <a href="#gio-hang" style="color: aliceblue; text-decoration: none;">Giỏ hàng của bạn</a>
+            </div>
+            <div class="px-4 py-2 mt-4"
+                style="height: fit-content; width: fit-content; background-color: rgb(51, 70, 48); margin-top: 30px; ">
+                <a href="#sp-da-mua" style="color: aliceblue; text-decoration: none;">Các sản phẩm đã mua</a>
+            </div>
+        </div>
+        <hr>
+        <div class="product" ng-repeat="sp in listHoaDon">
+            <img ng-src={{sp.anhSP}} alt="">
+            <div class="product-details">
+                <h2>{{sp.tenSP}}</h2>
+                <p>Giá: {{sp.gia}} đ</p>
+                <p>Số lượng: {{sp.soLuong}}</p>
+                <p>Thành tiền: {{sp.gia * sp.soLuong}} đ</p>
+            </div>
+            <div class="product-rating">
+                <button class="btn-danh-gia">Đánh giá</button>
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>

@@ -1,0 +1,192 @@
+<style>
+    .container {
+        background-image: url('Img/bg6225833_1920.jpg');
+        height: 550px;
+        margin-top: 125px;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-form {
+        background-color: #fdfbfbd0;
+        padding: 20px 60px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
+    .login-form h2 {
+        margin-bottom: 20px;
+    }
+
+    .login-form button {
+        background-color: #1e9a50;
+        /* Màu nút */
+        color: #fff;
+        border: none;
+        padding: 5px 25px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .login-form button:hover {
+        background-color: #2f353c;
+        /* Màu nền khi hover */
+    }
+
+    .forgotPassword {
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+</style>
+<section class="container">
+    <div class="row">
+        <div class="overlay col-12">
+            <div class="login-form">
+                <h2>Sign up</h2>
+                <form ng-submit="createUser($event)">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" ng-model="user.username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" 
+                            placeholder="name@example.com" ng-model="user.email" required>
+                    </div>
+                    <label class="form-label">Create a password</label>
+                    <input type="password" class="form-control"
+                        aria-describedby="passwordHelpBlock" ng-model="user.password" required>
+                    <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers.
+                    </div>
+                    <button type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background {
+            background-image: url('../Img/buttercups-6225833_1920.jpg');
+            /* Đặt hình nền */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            position: relative;
+        }
+
+        .overlay {
+            background-color: rgba(169, 167, 167, 0.145);
+            /* Màu nền mờ */
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form {
+            background-color: #fdfbfbb9;
+            /* Màu nền của khung form */
+            padding: 20px 60px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+
+
+
+        .login-form button {
+            background-color: #1e9a50;
+            /* Màu nút */
+            color: #fff;
+            border: none;
+            padding: 5px 25px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-form button:hover {
+            background-color: #2f353c;
+            /* Màu nền khi hover */
+        }
+
+        .nav-item a {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .forgotPassword {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.511);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="row">
+           
+            <div class="overlay col-12">
+                <div class="login-form">
+                    <h2>Sign up</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <label for="inputPassword5" class="form-label">Create a password</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock">
+                        <div id="passwordHelpBlock" class="form-text">
+                            Your password must be 8-20 characters long, contain letters and numbers.
+                        </div>
+                        <label for="reinputPassword5" class="form-label">Confirm password</label>
+                        <input type="repassword" id="reinputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock">
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html> -->

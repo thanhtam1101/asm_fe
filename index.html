@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <!-- Nhúng link CDN -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body ng-app="AssignmentSPA">
+    <!-- Nhúng code html phần header vào trang -->
+    <div ng-include="'layout/header.html'"></div>
+    <!-- Nhúng phần nội dung thay đổi theo từng url -->
+    <div ng-view></div>
+
+    <!-- Nhúng code html phần footer vào trang -->
+    <div ng-include="'layout/footer.html'"></div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> -->
+    <!-- Nhúng thư viện route để sử dụng được SPA: khai báo dưới câu lệnh khai báo angular js-->
+    <script src="../lib/angular.js"></script>
+    <script src="../../lib/angular-route.js"></script>
+    <!-- Nhúng các file contoller trước file điều hướng -->
+    <script src="controller/quan-ly-danh-muc.js"></script>
+    <script src="controller/quan-ly-san-pham.js"></script>
+    <script src="controller/dang-nhap.js"></script>
+    <script src="controller/dang-ky.js"></script>
+    <script src="controller/doi-mat-khau.js"></script>
+    <script src="controller/gio-hang.js"></script>
+
+    <!-- Nhúng các file js trong dự án -->
+    <script src="route.js"></script>
+</body>
+
+</html>

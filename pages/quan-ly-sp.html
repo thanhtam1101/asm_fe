@@ -1,0 +1,112 @@
+<style>
+    .btn {
+        width: 90px;
+        background-color: rgb(109, 139, 114);
+        color: aliceblue;
+    }
+
+    .main {
+        margin-top: 125px;
+        background-color: rgba(175, 198, 186, 0.333);
+    }
+
+    .table_c {
+        max-height: 350px;
+        overflow: auto;
+    }
+</style>
+
+<section class="main row">
+    <div>
+        <div class="col-12 d-flex" >
+            <div class="d-block col-4">
+                <div class="col-12 ">
+                    <form class="row g-3 p-3" ng-submit="creatUpdate($event)">
+                        <div class="col-6">
+                            <label class="form-label">Danh mục sản phẩm</label>
+                            <select class="form-select" ng-model="sp.danhMucSP">
+                                <option ng-repeat="dm in listdm" value="{{ dm.ten }}">{{ dm.ten }}</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-6">
+                            <label for="" class="form-label">Tên sản phẩm</label>
+                            <input type="text" class="form-control" ng-model="sp.tenSP">
+                        </div>
+                        <div class="col-6">
+                            <label for="" class="form-label">Số lượng</label>
+                            <input type="" class="form-control" ng-model="sp.soLuong">
+                        </div>
+                        <div class="col-6">
+                            <label for="" class="form-label">Giá nhập</label>
+                            <input type="" class="form-control" ng-model="sp.giaNhap">
+                        </div>
+                        <div class="col-6">
+                            <label for="" class="form-label">Giá bán</label>
+                            <input type="" class="form-control" ng-model="sp.giaBan">
+                        </div>
+
+                        <div class="col-6 ">
+                            <label for="" class="form-label">Mô tả</label>
+                            <textarea class="form-control" required ng-model="sp.moTa"></textarea>
+
+                        </div>
+                        <div class="col-6 ps-4">
+                            <img ng-src={{sp.anhSP}} width="80%" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <!-- Chọn file ảnh -->
+                            <input type="text" class="form-control" placeholder="Nhập đường dẫn ảnh" ng-model="sp.anhSP">
+                            <input type="file" class="form-control" accept="Img/" 
+                               >
+                            <div class="">
+                                <button type="submit" class="btn mt-5">Add</button>
+                                <button type="submit" class="btn mt-5">Update</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="ms-3 mb-5">
+                        <button type="button" class="btn " ng-click="clearForm()"
+                            style="margin-left: 245px;">Clear</button>
+                        <button type="button" class="btn " ng-click="delete($idSP)">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 p-3 " class="table_c">
+                <div class="px-4 py-2 me-1"
+                    style="height: fit-content; width: fit-content; background-color:  rgb(114, 150, 108);  margin-top: 30px; ">
+                    <a href="#quan-ly-sp" style="color: aliceblue; text-decoration: none;">Quản lý sản phẩm</a>
+                </div>
+                <div class="table_c">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Mã SP</th>
+                                <th scope="col">Loại sản phẩm</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Giá nhập</th>
+                                <th scope="col">Giá bán</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Mô tả</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="sp in listSP" ng-click="showSP($index)">
+                                <th scope="row">{{sp.id}}</th>
+                                <td>{{sp.danhMucSP}}</td>
+                                <td>{{sp.tenSP}}</td>
+                                <td>{{sp.giaNhap}}</td>
+                                <td>{{sp.giaBan}}</td>
+                                <td>{{sp.soLuong}}</td>
+                                <td>{{sp.moTa}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

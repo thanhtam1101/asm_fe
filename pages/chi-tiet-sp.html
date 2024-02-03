@@ -1,0 +1,93 @@
+<style>
+    .container {
+        position: relative;
+        background-color: rgb(247, 250, 253);
+        height: auto;
+        margin-top: 135px;
+    }
+
+    .danh-muc-sp a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .danh-muc-sp a:hover {
+        color: rgb(18, 27, 21);
+        font-size: 110%;
+    }
+</style>
+<section class="container">
+    <!-- Sidebar menu -->
+    <div class="row">
+        <img src="Img/Banner_Middelgrote_kamerplanten.jpg" width="100%" alt="">
+        <div class="d-block col-3 mt-2 mb-1">
+            <div class=" d-flex align-items-center justify-content-center"
+                style="height: 35px; background-color: rgb(55, 96, 62); color: aliceblue; font-size: 16px;">
+                <p class="text-center mt-3">DANH MỤC SẢN PHẨM</p>
+            </div>
+            <div class=" py-3 px-3 danh-muc-sp" style="border: 1px solid gray;">
+                <a href="#sen-da">Sen đá</a>
+                <hr>
+                <a href="">Xương rồng</a>
+                <hr>
+                <a href="">Cây để bàn</a>
+                <hr>
+                <a href="">Cây cảnh nội thất</a>
+                <hr>
+                <a href="">Phụ kiện TERRARIUM</a>
+                <hr>
+                <a href="">Chậu trồng cây</a>
+            </div>
+            <div class="mt-4"
+                style="height: 300px; background-color: rgb(60, 94, 65); text-align: center; color: aliceblue; ">
+                <p style="font-size: 26px; padding-top: 100px;">SALE OFF 10%</p>
+                <p style="font-size: 16px;">Từ ngày 26/09/2023 đến 30/09/2023</p>
+            </div>
+        </div>
+        <div class="col-9 mt-2 " >
+            <div>
+                <div class=" d-flex align-items-center justify-content-center"
+                    style="height: 35px; background-color: rgb(55, 96, 62); color: aliceblue; font-size: 16px; width: 20%;">
+                    <p class="text-center mt-3">{{sp.tenSP}}</p>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <div class="col-5">
+                        <img ng-src={{sp.anhSP}} width="100%" alt="">
+                        <div class="mt-3 text-center" style=" font-weight: bold;">
+                            <span style="color: rgb(143, 11, 11); font-size: 20px;">
+                                {{sp.giaBan}} đ</span><br>
+                            <p> Tình trạng: còn hàng</p>
+                        </div>
+                    </div>
+                    <div class="col-7 px-3" >
+                        <h4>Mô tả ngắn</h4>
+                        <hr>
+                        <p>
+                            Cây Sen Đá, hay còn gọi là "Sân vườn trong chai," là một trong những loại cây cảnh mini phổ
+                            biến và độc đáo trong thế giới cây cảnh. Với sự thanh khiết và tinh tế của nó, cây Sen Đá đã
+                            trở thành một biểu tượng của sự tĩnh lặng và sự thanh khiết trong thiết kế nội thất.<br>
+                            Sen Đá rất dễ chăm sóc, và nó có khả năng sống lâu dài trong điều kiện ánh sáng yếu và ít
+                            nước. Điều này làm cho nó trở thành một lựa chọn lý tưởng cho những người mới bắt đầu trong
+                            việc chăm sóc cây cảnh. Bất kể bạn đặt Sen Đá ở bàn làm việc, trên kệ sách, hay trong góc
+                            thư giãn của ngôi nhà, nó sẽ thêm vẻ thanh khiết và sự thanh tao vào môi trường của bạn.
+                        </p>
+                        <div class="d-flex">
+                            <p class="px-1">Số lượng</p>
+                            <input style="width: 50px;  height: 30px; text-align: center;" type="number" value="1" >
+                        </div>
+                        <div >
+                            <button class="btn" style="background-color: rgba(57, 98, 57, 0.916); color: aliceblue;"><i
+                                    class="ti-shopping-cart-full"></i> Mua hàng</button>
+                            <button type="submit"  ng-click="addToCart()" class="btn"
+                                style="background-color: rgba(103, 143, 103, 0.916); color: aliceblue;"><i
+                                    class="ti-shopping-cart-full"></i> Thêm vào giỏ hàng</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+</section>

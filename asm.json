@@ -1,0 +1,247 @@
+{
+  "SanPham": [
+    {
+      "id": 1,
+      "danhMucSP": "Cây để bàn",
+      "tenSP": "Sen đá A",
+      "soLuong": "20",
+      "giaNhap": "1000",
+      "giaBan": "5000",
+      "moTa": "Màu xanh ngọc",
+      "anhSP": "Img/senda1.jpg"
+    },
+    {
+      "id": 2,
+      "danhMucSP": "Sen đá",
+      "tenSP": "xương rồng mini A",
+      "soLuong": "15",
+      "giaNhap": "2000",
+      "giaBan": "6000",
+      "moTa": "Hình trònghjk",
+      "anhSP": "Img/senda2.jpg"
+    },
+    {
+      "id": 3,
+      "danhMucSP": "Sen đá",
+      "tenSP": "Cây kim tiền",
+      "soLuong": "30",
+      "giaNhap": "15000",
+      "giaBan": "30000",
+      "moTa": "Mini",
+      "anhSP": "Img/senda7.jpg"
+    },
+    {
+      "danhMucSP": "Cây cảnh nội thất",
+      "soLuong": "5",
+      "tenSP": "Xương rồng mini",
+      "giaNhap": "10000",
+      "giaBan": "15000",
+      "moTa": "Có gai",
+      "id": 4,
+      "anhSP": "Img/senda4.jpg"
+    },
+    {
+      "danhMucSP": "Xương rồng",
+      "tenSP": "Sen đá haha",
+      "soLuong": "15",
+      "giaNhap": "6000",
+      "giaBan": "80000",
+      "moTa": "Màu tím",
+      "id": 5,
+      "anhSP": "Img/senda5.jpg"
+    },
+    {
+      "danhMucSP": "Xương rồng",
+      "tenSP": "Sen đá C",
+      "soLuong": "1",
+      "giaNhap": "3000",
+      "giaBan": "90000",
+      "moTa": "1",
+      "id": 6,
+      "anhSP": "Img/senda6.jpg"
+    },
+    {
+      "danhMucSP": "Cây cảnh nội thất",
+      "tenSP": "Cây xương rồng",
+      "soLuong": "12",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 7,
+      "anhSP": "Img/sp1.jpg"
+    },
+    {
+      "danhMucSP": "Xương rồng",
+      "tenSP": "Cây xương rồng",
+      "soLuong": "5",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 8,
+      "anhSP": "Img/sp2.jpg"
+    },
+    {
+      "danhMucSP": "Xương rồng",
+      "tenSP": "Cây xương rồng 1",
+      "soLuong": "1",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 9,
+      "anhSP": "Img/sp3.jpg"
+    },
+    {
+      "danhMucSP": "Cây cảnh nội thất",
+      "tenSP": "Cây xương rồng",
+      "soLuong": "1",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 10,
+      "anhSP": "Img/NCYP handmade geometric terrarium, float frame, centerpiece urns.jpg"
+    },
+    {
+      "danhMucSP": "Xương rồng",
+      "tenSP": "Cây xương rồng",
+      "soLuong": "18",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 11,
+      "anhSP": "Img/sp4.jpg"
+    },
+    {
+      "danhMucSP": "Cây để bàn",
+      "tenSP": "Cây xương rồng",
+      "soLuong": "1",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 12,
+      "anhSP": "Img/sp5.jpg"
+    },
+    {
+      "danhMucSP": "Cây cảnh nội thất",
+      "tenSP": "Cây xương rồng",
+      "soLuong": "55",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 13,
+      "anhSP": "Img/sp6.jpg"
+    },
+    {
+      "danhMucSP": "Cây để bàn",
+      "tenSP": "Cây xương rồng",
+      "soLuong": "1",
+      "giaNhap": "3000",
+      "giaBan": "15000",
+      "moTa": "1",
+      "id": 14,
+      "anhSP": "Img/sp7.jpg"
+    },
+    {
+      "danhMucSP": "Phụ kiện TERRARIUM",
+      "tenSP": "z",
+      "soLuong": "34",
+      "giaNhap": "12",
+      "giaBan": "34",
+      "moTa": "dưertyuio",
+      "anhSP": "Img/sp1.jpg",
+      "id": 15
+    },
+    {
+      "danhMucSP": "Cây cảnh nội thất",
+      "tenSP": "7",
+      "soLuong": "7",
+      "giaNhap": "7",
+      "giaBan": "7",
+      "moTa": "7rtyuio",
+      "id": 16
+    }
+  ],
+  "DanhMuc": [
+    {
+      "id": 1,
+      "ten": "Sen đá",
+      "moTa": "Loại cây sen đá"
+    },
+    {
+      "id": 2,
+      "ten": "Xương rồng",
+      "moTa": "Xương rồng mini"
+    },
+    {
+      "id": 3,
+      "ten": "Cây để bàn",
+      "moTa": "Loại cây để bans"
+    },
+    {
+      "ten": "Cây cảnh nội thất",
+      "moTa": "s",
+      "id": 4
+    },
+    {
+      "ten": "Phụ kiện TERRARIUM",
+      "moTa": "23",
+      "id": 5
+    }
+  ],
+  "TaiKhoan": [
+    {
+      "username": "tamntt123",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "thanhtum",
+      "email": "tam@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "thanhtum123",
+      "email": "tam124@gmail.com",
+      "password": "1234",
+      "id": 4
+    }
+  ],
+  "GioHang": [
+    {
+      "ten": "Cây xương rồng",
+      "gia": "15000",
+      "soLuong": 1,
+      "anhSP": "Img/sp1.jpg",
+      "id": 1
+    }
+  ],
+  "HoaDon": [
+    {
+      "id": 1,
+      "idsp": 3,
+      "tenSP": "Sản phẩm 3",
+      "gia": 350000,
+      "soLuong": 2,
+      "tongTien": 700000,
+      "anhSP": "Img/sp4.jpg"
+    },
+    {
+      "anhSP": "Img/senda5.jpg",
+      "idsp": 3,
+      "tenSP": "Sen đá haha",
+      "gia": "80000",
+      "soLuong": 5,
+      "tongTien": 400000,
+      "id": 2
+    },
+    {
+      "anhSP": "Img/senda1.jpg",
+      "idsp": 4,
+      "tenSP": "Sen đá A",
+      "gia": "5000",
+      "soLuong": 1,
+      "tongTien": 5000,
+      "id": 3
+    }
+  ]
+}
